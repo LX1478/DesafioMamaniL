@@ -80,7 +80,8 @@ namespace DesafioMamaniL.Handler
                         "WHERE Id = @IdProducto", conn);
                     comando2.Parameters.Add(new SqlParameter("Stock", SqlDbType.Int) { Value = stock });
                     comando2.Parameters.Add(new SqlParameter("IdProducto", SqlDbType.BigInt) { Value = idProducto });
-                    comando2.BeginExecuteNonQuery();
+
+                    comando2.ExecuteNonQuery();
                 }
             }
         }

@@ -18,6 +18,7 @@ namespace DesafioMamaniL.Handler
                 comando.Parameters.Add(new SqlParameter("IdVenta", SqlDbType.BigInt) { Value = productoVendido.IdVenta1 });
 
                 conn.Open();
+                comando.ExecuteNonQuery();
             }
         }
     }
